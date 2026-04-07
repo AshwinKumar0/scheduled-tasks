@@ -25,8 +25,8 @@ else:
     print("No birthdays today.")
 
 
-my_email = "bsc.ca42ashwanikumar@gmail.com"
-password = "twpi wzzd atgd gqge"
+MY_EMAIL = os.environ.get("MY_EMAIL")
+MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
 with smtplib.SMTP("smtp.gmail.com", 587) as connection:
     connection.starttls()
